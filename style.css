@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald';
-* {
+  * {
   box-sizing: border-box;
   margin: 0;
 }
@@ -16,37 +16,35 @@ h1, h2, h3, h4 {
 .main-wrapper {
   width: 100%;
 }
-.masthead-wrapper {
+.small-nav-wrapper {
   width: 100%;
-}
-.nav-wrapper {
   position: fixed;
   top: 0;
-  width: 100%;
   height: 72px;
   margin: 0 auto;
   padding:15px 0;
   z-index: 2;
   background-color: #fff;
+
 }
-nav {
+.small-nav {
   width: 100%;
   height: 42px;
   padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   width: 155px;
   height: 35px;
   padding-top: 4px;
   margin-left: 14px;
-  float: left;
   background: url(http://wideopentech.com/themes/wot-2013-gm/_/img/wot-logo-whitex2.svg) no-repeat left bottom;
 }
 .hamburger {
   width: 42px;
   height: 42px;
   margin: 0 15px;
-  float: right;
 }
 .nav-button {
     width: 26px;
@@ -57,6 +55,17 @@ nav {
     background-size: 80%;
     border: 1px solid #fff;
 }
+.masthead-wrapper {
+  width: 100%;
+  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg) no-repeat center top;
+  background-size: cover;
+}
+.large-nav {
+  display: none;
+}
+.full-logo {
+  display: none;
+}
 .nav-links-list {
   display: none;
   clear: both;
@@ -66,24 +75,49 @@ nav {
 .nav-links {
   text-decoration: none;
 }
-.masthead {
-  position: absolute;
-  margin-top: 72px;
+
+.masthead-wrapper {
+  padding-top: 80px;
   width: 100%;
   text-align: center;
   font-family: 'Oswald', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
   color: #fff;
-  background: url(http://cdn01.wideopentech.com/themes/wot-2013-gm/_/img/wot-masthead-dark.jpg) no-repeat center;
-  background-size: cover;
+  margin: auto;
+  background-color: transparent;
 }
-.first, .workshop {
-    text-transform: uppercase;
+
+.subtitle-wrapper {
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  text-transform: none;
+  font-size: 1.2em;
 }
 .first {
-
+  font-size: 1.5em;
 }
 .workshop {
   display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20vw;
+  height: 100%;
+}
+.bar {
+  width: 12%;
+  height: 9px;
+  margin-top: .35em;
+  background-color: #fff;
+}
+.solutions {
+  color: #FF803A;
+}
+.ideas {
+  color: #A7BB34;
 }
 .button-wrapper {
   width: 100%;
@@ -91,13 +125,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: none;
 
 }
 .learn-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   height: 48px;
   margin: 0 auto;
   padding: 0 15px;
