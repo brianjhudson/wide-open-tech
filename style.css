@@ -63,19 +63,6 @@ h1, h2, h3, h4 {
 .large-nav {
   display: none;
 }
-.full-logo {
-  display: none;
-}
-.nav-links-list {
-  display: none;
-  clear: both;
-  list-style: none;
-  justify-content: space-around;
-}
-.nav-links {
-  text-decoration: none;
-}
-
 .masthead-wrapper {
   padding-top: 80px;
   width: 100%;
@@ -190,13 +177,52 @@ footer {
   text-align: center;
   font-size: .8em;
   color: #8B9699;
+  background-color: #f0f0f0;
+  padding: 40px 0;
 }
 @media (min-width: 768px) {
-  .nav-wrapper {
-    padding: 30px 0;
-    max-width: 750px;
-    margin: 0 auto;
-    background-color: transparent;
+  .small-nav-wrapper {
+    display: none;
+  }
+  .large-nav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 3;
+    padding: 20px 40px;
+  }
+  .masthead-wrapper {
+    padding-top: 120px;
+  }
+  .full-logo {
+    height: 31px;
+    width: 155px;
+    background: url(http://wideopentech.com/themes/wot-2013-gm/_/img/wot-logo-dark.svg) no-repeat left bottom;
+
+  }
+  .nav-links-list {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  .nav-links {
+    text-decoration: none;
+    color: #8B9699;
+    font-size: .9em;
+    letter-spacing: .1em;
+  }
+  .learn-button{
+    width: 180px;
+  }
+  .workshop {
+    width: 700px;
+    font-size: 10em;
+  }
+  .subtitle-wrapper {
+    width: 700px;
   }
 
 }
